@@ -1,0 +1,65 @@
+{
+    "firstName": {
+        "component": "BaseInput",
+        "label": "First Name",
+        "validations": {
+            "required": {
+                "params": null,
+                "message": "This field is required"
+            },
+            "minLength": {
+                "params": 3,
+                "message": "Please type at least 3 characters"
+            }
+        }
+    },
+    "lastName": {
+        "component": "BaseInput",
+        "label": "Last Name",
+        "validations": {
+            "required": {
+                "params": null,
+                "message": "This field is required"
+            }
+        }
+    },
+    "email": {
+        "component": "BaseInput",
+        "label": "Email",
+        "type": "email",
+        "validations": {
+            "required": {
+                "params": null,
+                "message": "This field is required"
+            },
+            "email": {
+                "params": null,
+                "message": "This field needs to be a valid email"
+            }
+        }
+    },
+    "favoritePet": {
+        "component": "BaseSelect",
+        "label": "What's your favorite pet?",
+        "options": [
+            {
+                "label": "Cat",
+                "value": "cat"
+            },
+            {
+                "label": "Dog",
+                "value": "dog"
+            },
+            {
+                "label": "Sea Otter",
+                "value": "otter"
+            }
+        ],
+        "validations": {
+            "required": {
+                "params": null,
+                "message": "This field is required"
+            }
+        }
+    }
+}
